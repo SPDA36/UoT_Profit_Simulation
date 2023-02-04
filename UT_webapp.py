@@ -69,12 +69,13 @@ def main():
 
 		fig1 = plt.figure(figsize=(11,11))
 		sns.histplot(data=profits)
-		plt.axvline(profits_mean, c='r', label=f'Mean: ${profits_mean:,.2f}')
-		plt.axvline(profits_median, c='k', label=f'Median: ${profits_median:,.2f}')
+		plt.axvline(profits_mean, c='green', label=f'Mean: ${profits_mean:,.2f}')
+		plt.axvline(profits_median, c='blue', label=f'Median: ${profits_median:,.2f}')
 		plt.axvline(profits_mean+profits_sd, c='orange',ls='--', label=f'+1SD: ${profits_mean+profits_sd:,.2f}')
 		plt.axvline(profits_mean-profits_sd, c='orange',ls='--', label=f'-1SD: ${profits_mean-profits_sd:,.2f}')
-		plt.axvline(profits_mean+profits_sd*2, c='green',ls='--', label=f'+2SD: ${profits_mean+profits_sd*2:,.2f}')
-		plt.axvline(profits_mean-profits_sd*2, c='green',ls='--', label=f'-2SD: ${profits_mean-profits_sd*2:,.2f}')
+		plt.axvline(profits_mean+profits_sd*2, c='pink',ls='--', label=f'+2SD: ${profits_mean+profits_sd*2:,.2f}')
+		plt.axvline(profits_mean-profits_sd*2, c='pink',ls='--', label=f'-2SD: ${profits_mean-profits_sd*2:,.2f}')
+		plt.axvline(risk_value, c='r', ls='--',label=f'Risk Value: ${risk_value:,}')
 		plt.legend(fontsize=15)
 		plt.title(f'Simulation with {events:,} Events', fontsize=20)
 
