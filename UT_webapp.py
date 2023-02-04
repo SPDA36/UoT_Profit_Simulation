@@ -69,7 +69,7 @@ def main():
 
 		fig1 = plt.figure(figsize=(11,11))
 		sns.histplot(data=profits)
-		plt.axvline(profits_mean, c='green', label=f'Mean: ${profits_mean:,.2f}')
+		plt.axvline(profits_mean, c='green', lw=5, label=f'Mean: ${profits_mean:,.2f}')
 		plt.axvline(profits_median, c='blue', label=f'Median: ${profits_median:,.2f}')
 		plt.axvline(profits_mean+profits_sd, c='orange',ls='--', label=f'+1SD: ${profits_mean+profits_sd:,.2f}')
 		plt.axvline(profits_mean-profits_sd, c='orange',ls='--', label=f'-1SD: ${profits_mean-profits_sd:,.2f}')
