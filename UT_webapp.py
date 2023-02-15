@@ -8,6 +8,7 @@ def main():
 	st.title('Monte Carlo Simulation for Manufacturing')
 	st.info('This simulation assumes some variables follow a normal distribution.  Other variables are decided by management and are static values. \n \
 		Please enter the values of the following variables and then click the run simulation button.')
+	st.info('- Brandon Johnson')
 
 	st.subheader('Static Variables')
 
